@@ -8,11 +8,17 @@ const reducer = (state, action) => {
     console.log(state)
     switch (action.colorToChange) {
         case 'Red':
-            return { ...state, red: state.red + action.amount }
+            return (state.red + action.amount > 255 || state.red + action.amount < 0) 
+                ? state : 
+                { ...state, red: state.red + action.amount }
         case 'Green':
-            return { ...state, green: state.green + action.amount }
+            return (state.green + action.amount > 255 || state.green + action.amount < 0) 
+                ? state : 
+                { ...state, green: state.green + action.amount }
         case 'Blue':
-            return { ...state, blue: state.blue + action.amount }
+            return (state.blue + action.amount > 255 || state.blue + action.amount < 0) 
+                ? state : 
+                { ...state, blue: state.blue + action.amount }
         default:
             return state
     }
@@ -26,8 +32,8 @@ const ReduxSquareScreen = () => {
 
     return (
         <View>
-            <ColorCounter colorName="Red" onIncrement={() => 
-                 dispatch({ colorToChange: "Red", amount: COLOR_INCREMENT })
+            <ColorCounter colorName="Red" onIncrement={() =>
+                dispatch({ colorToChange: "Red", amount: COLOR_INCREMENT })
             } onDecrement={() => {
                 return dispatch({ colorToChange: "Red", amount: -1 * COLOR_INCREMENT })
             }}>

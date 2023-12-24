@@ -8,6 +8,9 @@ import CounterScreen from "./src/screens/CounterScreen";
 import ColorScreen from "./src/screens/ColorScreen";
 import SquareScreen from "./src/screens/SquareScreen";
 import ReduxSquareScreen from "./src/screens/ReduxSquareScreen";
+import ReduxCounterScreen from "./src/screens/ReduxCounterScreen";
+import TextScreen from "./src/screens/TextScreen";
+import PasswordValidator from "./src/screens/PasswordValidator";
 
 const navigator = createStackNavigator(
   {
@@ -18,7 +21,10 @@ const navigator = createStackNavigator(
     Counter: CounterScreen,
     Color: ColorScreen,
     Square: SquareScreen,
-    ReduxSquare: ReduxSquareScreen
+    ReduxSquare: ReduxSquareScreen,
+    ReduxCounter: ReduxCounterScreen,
+    TextDisplay: TextScreen,
+    PasswordValidator: PasswordValidator
   },
   {
     initialRouteName: "Home",

@@ -12,6 +12,9 @@ const HomeScreen = (props) => {
       <Button onPress={() => { props.navigation.navigate('Color');}} title="Go to Color Screen"/>
       <Button onPress={() => { props.navigation.navigate('Square');}} title="Go to Square Screen"/>
       <Button onPress={() => { props.navigation.navigate('ReduxSquare');}} title="Go to Redux Square Screen"/>
+      <Button onPress={() => { props.navigation.navigate('ReduxCounter');}} title="Go to Redux Counter Screen"/>
+      <Button onPress={() => { props.navigation.navigate('TextDisplay');}} title="Go to Text Screen"/>
+      <Button onPress={() => { props.navigation.navigate('PasswordValidator');}} title="Go to Password Validator Screen"/>
       {/* <TouchableOpacity onPress={() => props.navigation.navigate('List')}>
         <Text>Go to List Demo</Text>
       </TouchableOpacity> */}
