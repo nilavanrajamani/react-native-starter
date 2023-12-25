@@ -15,6 +15,7 @@ const HomeScreen = (props) => {
       <Button onPress={() => { props.navigation.navigate('ReduxCounter');}} title="Go to Redux Counter Screen"/>
       <Button onPress={() => { props.navigation.navigate('TextDisplay');}} title="Go to Text Screen"/>
       <Button onPress={() => { props.navigation.navigate('PasswordValidator');}} title="Go to Password Validator Screen"/>
+      <Button onPress={() => { props.navigation.navigate('Box');}} title="Go to Box Screen"/>      
       {/* <TouchableOpacity onPress={() => props.navigation.navigate('List')}>
         <Text>Go to List Demo</Text>
       </TouchableOpacity> */}

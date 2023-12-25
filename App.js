@@ -11,6 +11,7 @@ import ReduxSquareScreen from "./src/screens/ReduxSquareScreen";
 import ReduxCounterScreen from "./src/screens/ReduxCounterScreen";
 import TextScreen from "./src/screens/TextScreen";
 import PasswordValidator from "./src/screens/PasswordValidator";
+import BoxScreen from "./src/screens/BoxScreen";
 
 const navigator = createStackNavigator(
   {
@@ -24,7 +25,8 @@ const navigator = createStackNavigator(
     ReduxSquare: ReduxSquareScreen,
     ReduxCounter: ReduxCounterScreen,
     TextDisplay: TextScreen,
-    PasswordValidator: PasswordValidator
+    PasswordValidator: PasswordValidator,
+    Box: BoxScreen
   },
   {
     initialRouteName: "Home",
